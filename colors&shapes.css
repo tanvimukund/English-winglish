@@ -1,0 +1,678 @@
+:root{
+  --red:#f53b57;
+}
+
+*{
+  margin: 0 auto; padding:0;
+  box-sizing: border-box;
+  font-family: cursive;
+  text-transform: capitalize;
+  text-decoration: none;
+  outline:none; border:none;
+  transition: all 0.2s ease-out;
+}
+*::selection{
+  background:var(--red);
+  color:#fff;
+}
+html{
+  font-size: 62.5%;
+  overflow-x:hidden;
+  scroll-behavior: smooth;
+}
+header{
+  position:fixed;
+  top:0; left:0; right:0;
+  background-size: cover;
+  z-index:10000;
+  padding:2rem 7%;
+  padding-bottom: 3rem;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .let{
+  font-size: 20px;
+  padding-right: 0.5rem ;
+  color:#f53b57
+}
+header .navbar a{
+  font-size: 20px;
+  margin-left: 2rem;
+  margin:5px;
+  color:#333;
+  justify-content: space-between;
+}
+header .navbar a:hover{
+  color:#f53b57;
+}
+
+#menu-bars{
+  font-size: 2rem;
+  color:#333;
+  padding:5rem 1.5rem;
+  display:none;
+}
+#menu-bars:hover{
+  cursor: pointer;
+  color:#f53b57;
+}
+
+/*colours section*/
+.colours{
+  padding:3rem;
+}
+.colours h3{
+  margin-top:50px;
+  padding:20px;
+  font-size: 3rem;
+  color:#f53b57;
+  text-align: center;
+}
+.colours .containers{
+  padding:2rem;
+}
+/*red*/
+.colours .containers .red-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+  padding: 2rem;
+}
+.colours .containers .red-container .red{
+  padding:2rem;
+  border-radius: 50%;
+  background-color: red;
+  width:200px;
+  height:200px;
+  margin-left:100px;
+}
+.colours .containers .red-container .red:hover{
+  cursor:pointer;
+  width:250px;
+  height:250px;
+}
+.colours .containers .red-container .red .text h3{
+  color:#fff;
+  font-size: 3rem;
+  margin-top:30px;
+}
+
+/*blue*/
+.colours .containers .red-container .blue{
+  padding:2rem;
+  border-radius: 50%;
+  background-color: blue;
+  width:200px;
+  height:200px;
+  margin-right:100px;
+}
+.colours .containers .red-container .blue:hover{
+  cursor:pointer;
+  width:250px;
+  height:250px;
+}
+.colours .containers .red-container .blue .text h3{
+  color:#fff;
+  font-size: 3rem;
+  margin-top:30px;
+}
+
+/*green*/
+.colours .containers .red-container .green{
+  padding:2rem;
+  border-radius: 50%;
+  background-color: green;
+  width:200px;
+  height:200px;
+  margin-left:100px;
+}
+.colours .containers .red-container .green:hover{
+  cursor:pointer;
+  width:250px;
+  height:250px;
+}
+.colours .containers .red-container .green .text h3{
+  color:#fff;
+  font-size: 3rem;
+  margin-top:30px;
+}
+
+/*yellow*/
+.colours .containers .red-container .yellow{
+  padding:2rem;
+  border-radius: 50%;
+  background-color: yellow;
+  width:200px;
+  height:200px;
+  margin-right:100px;
+}
+.colours .containers .red-container .yellow:hover{
+  cursor:pointer;
+  width:250px;
+  height:250px;
+}
+.colours .containers .red-container .yellow .text h3{
+  color:#fff;
+  font-size: 3rem;
+  margin-top:30px;
+}
+
+/*pink*/
+.colours .containers .red-container .pink{
+  padding:2rem;
+  border-radius: 50%;
+  background-color:rgb(246,1,149);
+  width:200px;
+  height:200px;
+  margin-left:100px;
+}
+
+.colours .containers .red-container .pink:hover{
+  cursor:pointer;
+  width:250px;
+  height:250px;
+}
+.colours .containers .red-container .pink .text h3{
+  color:#fff;
+  font-size: 3rem;
+  margin-top:30px;
+}
+
+/*brown*/
+.colours .containers .red-container .brown{
+  padding:2rem;
+  border-radius: 50%;
+  background-color:brown;
+  width:200px;
+  height:200px;
+  margin-right:100px;
+}
+.colours .containers .red-container .brown:hover{
+  cursor:pointer;
+  width:250px;
+  height:250px;
+}
+.colours .containers .red-container .brown .text h3{
+  color:#fff;
+  font-size: 3rem;
+  margin-top:30px;
+}
+
+/*purple*/
+.colours .containers .red-container .purple{
+  padding:2rem;
+  border-radius: 50%;
+  background-color:purple;
+  width:200px;
+  height:200px;
+  margin-left:100px;
+}
+.colours .containers .red-container .purple:hover{
+  cursor:pointer;
+  width:250px;
+  height:250px;
+}
+.colours .containers .red-container .purple .text h3{
+  color:#fff;
+  font-size: 3rem;
+  margin-top:30px;
+}
+
+/*grey*/
+.colours .containers .red-container .grey{
+  padding:2rem;
+  border-radius: 50%;
+  background-color:grey;
+  width:200px;
+  height:200px;
+  margin-right:100px;
+}
+.colours .containers .red-container .grey:hover{
+  cursor:pointer;
+  width:250px;
+  height:250px;
+}
+.colours .containers .red-container .grey .text h3{
+  color:#fff;
+  font-size: 3rem;
+  margin-top:30px;
+}
+
+/*black*/
+.colours .containers .red-container .black{
+  padding:2rem;
+  border-radius: 50%;
+  background-color:black;
+  width:200px;
+  height:200px;
+  margin-left:100px;
+}
+.colours .containers .red-container .black:hover{
+  cursor:pointer;
+  width:250px;
+  height:250px;
+}
+.colours .containers .red-container .black .text h3{
+  color:#fff;
+  font-size: 3rem;
+  margin-top:30px;
+}
+
+/*orange*/
+.colours .containers .red-container .orange{
+  padding:2rem;
+  border-radius: 50%;
+  background-color:orangered;
+  width:200px;
+  height:200px;
+  margin-right:100px;
+}
+.colours .containers .red-container .orange:hover{
+  cursor:pointer;
+  width:250px;
+  height:250px;
+}
+.colours .containers .red-container .orange .text h3{
+  color:#fff;
+  font-size: 3rem;
+  margin-top:30px;
+}
+
+
+/*balloon*/
+.colours .containers .red-container .red img{
+  margin-left:400px;
+  margin-top:-115px;
+}
+.colours .containers .red-container .red p{
+  margin-left:740px;
+  margin-top:-140px;
+  font-size:3rem;
+  color:black;
+}
+
+/*car*/
+.colours .containers .red-container .blue img{
+  width:280px;
+  height:190px;
+  margin-left:-450px;
+  margin-top:-115px;
+}
+.colours .containers .red-container .blue p{
+  margin-left:-730px;
+  margin-top:-140px;
+  font-size:3rem;
+  color:black;
+}
+
+/*tree*/
+.colours .containers .red-container .green img{
+  width:280px;
+  height:190px;
+  margin-left:400px;
+  margin-top:-100px;
+}
+.colours .containers .red-container .green p{
+  margin-left:740px;
+  margin-top:-160px;
+  font-size:3rem;
+  color:black;
+}
+
+/*yellow- flower*/
+.colours .containers .red-container .yellow img{
+  width:280px;
+  height:190px;
+  margin-left:-450px;
+  margin-top:-115px;
+}
+.colours .containers .red-container .yellow p{
+  margin-left:-730px;
+  margin-top:-140px;
+  font-size:3rem;
+  color:black;
+}
+
+/*ice=cream*/
+.colours .containers .red-container .pink img{
+  width:280px;
+  height:190px;
+  margin-left:400px;
+  margin-top:-120px;
+}
+.colours .containers .red-container .pink p{
+  margin-left:740px;
+  margin-top:-160px;
+  font-size:3rem;
+  color:black;
+}
+
+/*brown-teddy*/
+.colours .containers .red-container .brown img{
+  width:240px;
+  height:190px;
+  margin-left:-450px;
+  margin-top:-115px;
+}
+.colours .containers .red-container .brown p{
+  margin-left:-730px;
+  margin-top:-140px;
+  font-size:3rem;
+  color:black;
+}
+
+/*grapes*/
+.colours .containers .red-container .purple img{
+  width:280px;
+  height:190px;
+  margin-left:400px;
+  margin-top:-120px;
+}
+.colours .containers .red-container .purple p{
+  margin-left:740px;
+  margin-top:-160px;
+  font-size:3rem;
+  color:black;
+}
+
+/*grey-elephant*/
+.colours .containers .red-container .grey img{
+  width:240px;
+  height:190px;
+  margin-left:-450px;
+  margin-top:-115px;
+}
+.colours .containers .red-container .grey p{
+  margin-left:-730px;
+  margin-top:-140px;
+  font-size:3rem;
+  color:black;
+}
+
+/*socks*/
+.colours .containers .red-container .black img{
+  width:280px;
+  height:190px;
+  margin-left:400px;
+  margin-top:-120px;
+}
+.colours .containers .red-container .black p{
+  margin-left:740px;
+  margin-top:-160px;
+  font-size:3rem;
+  color:black;
+}
+
+/*orange*/
+.colours .containers .red-container .orange img{
+  width:240px;
+  height:190px;
+  margin-left:-450px;
+  margin-top:-115px;
+}
+.colours .containers .red-container .orange p{
+  margin-left:-730px;
+  margin-top:-140px;
+  font-size:3rem;
+  color:black;
+}
+
+.completed #comepletedButton{
+  margin-left:59rem;
+  font-size: 2rem;
+  color:white;
+  background-color:#f53b57;
+  border-radius: 1rem;
+  border:0.1rem solid #333;
+  padding:1rem;
+}
+.completed #comepletedButton:hover{
+  cursor:pointer;
+  background-color: aliceblue;
+  color:#f53b57;
+}
+
+
+
+/*square*/
+.shapes h3{
+  padding:3rem;
+  font-size:4rem;
+  color:#f53b57;
+  text-align: center;
+}
+
+.shapes .box-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+  padding:2rem;
+}
+.shapes .box-container .box{
+  overflow:hidden;
+  width:130px;
+  height:37rem;
+  flex:1 1 27rem;
+  padding:2rem 3rem;
+  margin:1rem;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+  border:0.1rem solid rgba(0, 0, 0, 0.3);
+  border-radius:1rem;
+  text-align:center;
+  background-size: cover;
+  background-position:center;
+  position: relative;
+}
+.shapes .box-container .box h1{
+  font-size:2rem;
+}
+#img{
+  padding-top:2rem;
+  height:190px;
+  width:15rem;
+  object-fit:cover;
+}
+#parallelogram{
+  height:190px;
+  width:20;
+}
+#crescent{
+  height:200px;
+  width:20;
+}
+#hexagon{
+  height: 190px;
+  width:20;
+}
+#rectangle{
+  width:20;
+  height:190px;
+}
+
+.completed #comepletedButton2{
+  margin-left:59rem;
+  font-size: 2rem;
+  color:white;
+  background-color:#f53b57;
+  border-radius: 1rem;
+  border:0.1rem solid #333;
+  padding:1rem;
+}
+.completed #comepletedButton2:hover{
+  cursor:pointer;
+  background-color: aliceblue;
+  color:#f53b57;
+}
+
+/*footer section*/
+.footer{
+  position:relative;
+  text-align: center;
+  padding:2.5rem 1.5rem;
+  font-size:2rem;
+  color:#666;
+  background: url(images/img-top.png) no-repeat;
+  background-size:cover;
+}
+
+.footer span{
+  color:var(--red);
+}
+
+.footer .bakToHome{
+  padding: 0 2.6rem;
+}
+
+.footer .bakToHome p{
+  font-size: 2rem;
+  color:#f53b57;
+  padding-bottom:2.6rem;
+}
+
+.footer .bakToHome #bakToHomeBtn{
+  border-radius: 2rem;
+  border:0.1rem solid #333;
+  padding:1rem;
+  background-color: #f53b57;
+  color:aliceblue;
+}
+.footer .bakToHome #bakToHomeBtn:hover{
+  cursor:pointer;
+  background-color: aliceblue;
+  color:#333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1200px){
+  html{
+    font-size: 50%;
+  }
+
+  header{
+    padding:1.5rem;
+    padding-bottom: 6rem;
+  }
+
+  section{
+    padding: 0 3%;
+    padding-top: 11rem;
+    padding-bottom: 9rem;
+  }
+}
+
+@media(max-width:768px){
+  #menu-bars{
+    display:block;
+  }
+
+  header .navbar{
+    position:absolute;
+    top:70%; right:0; left:0;
+    height: calc(100vh - 70%);
+    border-top:0.2rem solid #333;
+    background-size: cover;
+    background-position: center;
+    clip-path:polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.nav-toggle{
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  header .navbar a{
+    font-size:2.5rem;
+    margin:2rem 0;
+    display:block;
+    text-align:center;
+  }
+
+  section .box-container .box{
+    text-align: center;
+    flex-flow:column;
+  }
+
+
+
+  /*section .box-container .red{
+    text-align: center;
+    flex-flow:column;
+  }
+
+  section .box-container .blue{
+    text-align: center;
+    flex-flow:column;
+  }
+
+  section .box-container .green{
+    text-align: center;
+    flex-flow:column;
+  }
+
+  section .box-container .yellow{
+    text-align: center;
+    flex-flow:column;
+  }
+
+  section .box-container .pink{
+    text-align: center;
+    flex-flow:column;
+  }
+
+  section .box-container .brown{
+    text-align: center;
+    flex-flow:column;
+  }
+
+  section .box-container .purple{
+    text-align: center;
+    flex-flow:column;
+  }
+
+  section .box-container .grey{
+    text-align: center;
+    flex-flow:column;
+  }
+
+  section .box-container .black{
+    text-align: center;
+    flex-flow:column;
+  }
+
+  section .box-container .orange{
+    text-align: center;
+    flex-flow:column;
+  }*/
+
+  section .colours{
+    text-align:center;
+    flex-flow:column;
+  }
+
+  section .colours .red-container img{
+    display:none;
+  }
+
+}
+
+@media(max-width:450px){
+  html{
+    font-size:50%;
+  }
+}

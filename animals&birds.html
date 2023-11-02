@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!---css file link-->
+    <link rel="stylesheet" href="C:\Users\tanvi\OneDrive\Desktop\kindergarten-website\animals&birds.css">
+
+  
+  </head>
+    <body>
+    <!---header section-->
+    <header style="background-color:rgb(245,241,230);">
+
+      <a href="#" class="logo"><i class="fas fa-child"> English-Winglish</i></a>
+
+      <a href="#" class="let">Let's start our journey kids...</a>
+      <div id="menu-bars" class="fas fa-bars"></div>
+      <nav class="navbar" style="background-image:url(images/card-bg2.png);">
+        <a href="#animals">Animals</a>
+      </nav>
+
+    </header>
+    <!---header section ends-->
+
+
+
+    <!---part-one section starts-->
+
+    <section class="animals" id="animals" style="background-image: url(images/background.png);">
+      
+      <img src="C:\Users\tanvi\OneDrive\Desktop\kindergarten-website\images\all data\leaf-1.png">
+
+      <div class="heading">
+        <h1>Animals</h1>
+        <p>There are different types of animals in nature, pet animals and wild animals<br>Now
+        let's begin with pet animals</p>
+      </div>
+
+      <h4>1) PET ANIMALS</h4>
+
+      <h5>1.COW</h5>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="C:\Users\tanvi\OneDrive\Desktop\kindergarten-website\images\animals\cow.jpeg" alt="">
+          <div class="content">
+            <h1>COW</h1>
+            <h2>This is cow, Cow gives us fresh milk!!</h2>
+          </div>
+        </div>
+      </div>
+
+      <h5>2.OX</h5>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="C:\Users\tanvi\OneDrive\Desktop\kindergarten-website\images\animals\ox.jpeg" alt="">
+          <div class="content">
+            <h1>OX</h1>
+            <h2>Ox helps farmers in farming their land</h2>
+          </div>
+        </div>
+      </div>
+
+      <h5>3.Goat</h5>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="C:\Users\tanvi\OneDrive\Desktop\kindergarten-website\images\animals\goat.jpeg" alt="">
+          <div class="content">
+            <h1>Goat</h1>
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+
+      <h5>4.SHEEP</h5>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="C:\Users\tanvi\OneDrive\Desktop\kindergarten-website\images\animals\sheep.jpeg" alt="">
+          <div class="content">
+            <h1>Sheep</h1>
+            <h2>Sheep gives wool.</h2>
+          </div>
+        </div>
+      </div>
+
+      <h5>5.HEN</h5>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="C:\Users\tanvi\OneDrive\Desktop\kindergarten-website\images\animals\chicken.jpeg" alt="">
+          <div class="content">
+            <h1>Hen</h1>
+            <h2>Hen gives us eggs.</h2>
+          </div>
+        </div>
+      </div>
+
+      <h5>6.HORSE</h5>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="C:\Users\tanvi\OneDrive\Desktop\kindergarten-website\images\animals\horse.jpeg" alt="">
+          <div class="content">
+            <h1>Horse</h1>
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+
+      <h5>7.DUCK</h5>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="C:\Users\tanvi\OneDrive\Desktop\kindergarten-website\images\animals\duck.jpeg" alt="">
+          <div class="content">
+            <h1>Duck</h1>
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+
+      <h5>8.RABBIT</h5>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="C:\Users\tanvi\OneDrive\Desktop\kindergarten-website\images\animals\rabbit.png" alt="">
+          <div class="content">
+            <h1>Rabbit</h1>
+            <h2>Rabbit can run fast.</h2>
+          </div>
+        </div>
+      </div>
+
+      <h5>9.DONKEY</h5>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="C:\Users\tanvi\OneDrive\Desktop\kindergarten-website\images\animals\donkey.jpeg" alt="">
+          <div class="content">
+            <h1>Donkey</h1>
+            <h2>Donkey carries load of the luggage.</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="completed">
+        <button id="comepletedButton3">Pet Animals completed!!</button>
+      </div>
+
+      <p id="forNextPage">For Wild Animals click on the below button</p>
+
+
+      <div class="nextPageBtn">
+        <button id="nextPageBtn" onclick="window.location.href='animals&birds2.html';">Next Page</button>
+      </div>
+
+
+
+      
+    </section>
+
+    <!---part-one section ends-->
+    
+    <!---main-section starts-->
+
+
+    <!---main-section ends-->
+
+    <!---footer part starts-->
+    
+    <!---footer part ends-->
+
+    <!---js part starts-->
+    <script>
+
+      document.getElementById("comepletedButton3").onclick = function(){
+        alert("Well Done Kids... now let's get introduced with wild animals!!");
+      }
+
+      
+
+      let menu = document.querySelector('#menu-bars');
+      let navbar = document.querySelector('.navbar');
+
+      menu.addEventListener('click', () =>{
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('nav-toggle');
+      });
+
+      window.onscroll = () =>{
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('nav-toggle');
+      }
+
+
+      includeHTML();
+    </script>
+    <!---js part ends-->
+
+  </body>
+  
+</html>

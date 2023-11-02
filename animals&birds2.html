@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!---css file link-->
+    <link rel="stylesheet" href="C:\Users\tanvi\OneDrive\Desktop\kindergarten-website\animals&birds2.css">
+
+  
+  </head>
+    <body>
+    <!---header section-->
+    <header style="background-color:rgb(245,241,230);">
+
+      <a href="#" class="logo"><i class="fas fa-child"> English-Winglish</i></a>
+
+      <a href="#" class="let">Let's start our journey kids...</a>
+      
+
+    </header>
+    <!---header section ends-->
+
+
+
+    <!---part-one section starts-->
+
+    <section class="animals" id="animals" style="background-image: url(images/background.png);">
+      
+      <img src="abcd-sticker/elaphant-sticekr.png">
+
+      <div class="heading">
+        <h1>Animals</h1>
+        <p>Now let's Start Wild Animals</p>
+      </div>
+
+      <h4>1) WILD ANIMALS</h4>
+
+      <h5>1.Tiger</h5>
+
+      <div class="box-container">
+        <div class="box">
+          <img class="img2" src="images/wild animals/tiger.jpeg" alt="">
+          <div class="content">
+            <h1>TIGER</h1>
+          </div>
+        </div>
+      </div>
+
+      <h5>2.Lion</h5>
+
+      <div class="box-container">
+        <div class="box">
+          <img class="img2"  src="images/wild animals/lion.jpeg" alt="">
+          <div class="content">
+            <h1>LION</h1>
+          </div>
+        </div>
+      </div>
+
+      <h5>3.Anaconda</h5>
+
+      <div class="box-container">
+        <div class="box">
+          <img class="img2" src="images/wild animals/anaconda.jpeg" alt="">
+          <div class="content">
+            <h1>ANACONDA</h1>
+          </div>
+        </div>
+      </div>
+
+      <h5>4.Camel</h5>
+
+      <div class="box-container">
+        <div class="box">
+          <img class="img2" src="images/wild animals/camel.jpeg" alt="">
+          <div class="content">
+            <h1>CAMEL</h1>
+          </div>
+        </div>
+      </div>
+
+      <h5>5.Cheetah</h5>
+
+      <div class="box-container">
+        <div class="box">
+          <img class="img2" src="images/wild animals/cheetah.jpeg" alt="">
+          <div class="content">
+            <h1>CHEETAH</h1>
+          </div>
+        </div>
+      </div>
+
+      <h5>6.Chimpanzee</h5>
+
+      <div class="box-container">
+        <div class="box">
+          <img class="img2" src="images/wild animals/cimpanzee.jpeg" alt="">
+          <div class="content">
+            <h1>CHIMPANZEE</h1>
+          </div>
+        </div>
+      </div>
+
+      <h5>7.Goriila</h5>
+
+      <div class="box-container">
+        <div class="box">
+          <img class="img2" src="images/wild animals/gorilla.jpeg" alt="">
+          <div class="content">
+            <h1>GORILLA</h1>
+          </div>
+        </div>
+      </div>
+
+      <h5>8.Hippopotamus</h5>
+
+      <div class="box-container">
+        <div class="box">
+          <img class="img2" src="images/wild animals/hippo.jpeg" alt="">
+          <div class="content">
+            <h1>HIPPOPOTAMUS</h1>
+          </div>
+        </div>
+      </div>
+
+      <h5>9.Zebra</h5>
+
+      <div class="box-container">
+        <div class="box">
+          <img class="img2" src="images/wild animals/zebra.png" alt="">
+          <div class="content">
+            <h1>ZEBRA</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="completed">
+        <button id="comepletedButton3">Wild Animals completed!!</button>
+      </div>
+
+      <p id="forNextPage">For birds click on the below button</p>
+
+
+      <div class="nextPageBtn">
+        <button id="nextPageBtn" onclick="window.location.href='birds.html';">Go to the Birds Page</button>
+      </div>
+
+     
+
+      
+
+
+
+      
+    </section>
+
+    <!---part-one section ends-->
+    
+    
+
+    
+
+    <!---js part starts-->
+    <script>
+
+      document.getElementById("comepletedButton3").onclick = function(){
+        alert("Congratulations!!.....Now it's time for birds!!");
+      }
+
+
+      let menu = document.querySelector('#menu-bars');
+      let navbar = document.querySelector('.navbar');
+
+      menu.addEventListener('click', () =>{
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('nav-toggle');
+      });
+
+      window.onscroll = () =>{
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('nav-toggle');
+      }
+
+
+      includeHTML();
+    </script>
+    <!---js part ends-->
+
+  </body>
+  
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!---css file link-->
+    <link rel="stylesheet" href="C:\Users\tanvi\OneDrive\Desktop\kindergarten-website\birds.css">
+
+  
+  </head>
+    <body>
+    <!---header section-->
+    <header style="background-color:rgb(245,241,230);">
+
+      <a href="#" class="logo"><i class="fas fa-child"> English-Winglish</i></a>
+
+      <a href="#" class="let">Let's start our journey kids...</a>
+      
+
+    </header>
+    <!---header section ends-->
+
+
+
+    <!---part-one section starts-->
+
+    <section class="animals" id="animals" style="background-image: url(images/background.png);">
+      
+      <img src="images/abcd-sticker/birds-sticker.png">
+
+      <div class="heading">
+        <h1>BIRDS</h1>
+        <p>Now let's Start Wild Animals</p>
+      </div>
+
+      <h4>Birds</h4>
+
+
+      <div class="box-container">
+
+        <div class="box">
+          <img class="img2" src="images/birds/canary.jpeg" alt="">
+          <div class="content">
+            <h1>Canary</h1>
+          </div>
+        </div>
+
+
+        <div class="box">
+          <img class="img2"  src="images/birds/crow.jpeg" alt="">
+          <div class="content">
+            <h1>Crow</h1>
+          </div>
+        </div>
+
+
+        <div class="box">
+          <img class="img2" src="images/birds/cuckoo.jpeg" alt="">
+          <div class="content">
+            <h1>Cuckoo</h1>
+          </div>
+        </div>
+
+
+        <div class="box">
+          <img class="img2" src="images/birds/eagle.jpeg" alt="">
+          <div class="content">
+            <h1>Eagle</h1>
+          </div>
+        </div>
+
+
+        <div class="box">
+          <img class="img2" src="images/birds/kingfisher.jpeg" alt="">
+          <div class="content">
+            <h1>Kingfisher</h1>
+          </div>
+        </div>
+
+
+        <div class="box">
+          <img class="img2" src="images/birds/parrot.jpeg" alt="">
+          <div class="content">
+            <h1>Parrot</h1>
+          </div>
+        </div>
+
+
+        <div class="box">
+          <img class="img2" src="images/birds/peacock.jpeg" alt="">
+          <div class="content">
+            <h1>Peacock</h1>
+          </div>
+        </div>
+
+
+        <div class="box">
+          <img class="img2" src="images/birds/sparrow.png" alt="">
+          <div class="content">
+            <h1>Sparrow</h1>
+          </div>
+        </div>
+
+
+        <div class="box">
+          <img class="img2" src="images/birds/swan.jpeg" alt="">
+          <div class="content">
+            <h1>Swan</h1>
+          </div>
+        </div>
+
+      </div>
+      
+
+      <div class="completed">
+        <button id="comepletedButton3">Completed</button>
+      </div>
+
+      <section class="footer">
+        <div class="bakToHome">
+  
+          <p>Now lets learn more interesting things ahead...</p>
+          <button id="bakToHomeBtn" onclick="window.location.href='new-project.html';">For further studies click here & to Home Page!!</button>
+  
+        </div>
+      </section>
+
+      
+
+
+
+      
+    </section>
+
+    <!---part-one section ends-->
+    
+    <!---main-section starts-->
+
+    <!--<section class="birds" id="birds">
+      <h3>Birds</h3>
+
+      
+
+      
+
+    </section>-->
+
+    <!---main-section ends-->
+
+    <!---footer part starts-->
+    
+    <!---footer part ends-->
+
+    <!---js part starts-->
+    <script>
+
+      document.getElementById("comepletedButton3").onclick = function(){
+        alert("We have successfully completed Animals and Birds Section....Congratulations!!");
+      }
+
+
+      let menu = document.querySelector('#menu-bars');
+      let navbar = document.querySelector('.navbar');
+
+      menu.addEventListener('click', () =>{
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('nav-toggle');
+      });
+
+      window.onscroll = () =>{
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('nav-toggle');
+      }
+
+
+      includeHTML();
+    </script>
+    <!---js part ends-->
+
+  </body>
+  
+</html>

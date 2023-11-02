@@ -1,0 +1,167 @@
+:root{
+  --red:#f53b57;
+}
+
+
+*{
+  margin: 0 auto; padding:0;
+  box-sizing: border-box;
+  font-family: cursive;
+  text-transform: capitalize;
+  text-decoration: none;
+  outline:none; border:none;
+  transition: all 0.2s ease-out;
+}
+
+*::selection{
+  background:var(--red);
+  color:#fff;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x:hidden;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding:10% 7%;
+  padding-top: 11 rem;
+  padding-bottom: 3 rem;
+}
+
+header{
+  position:fixed;
+  top:0; left:0; right:0;
+  background-size: cover;
+  background-color: #dfd5d5;
+  background-position: bottom;
+  z-index:10000;
+  padding:2rem 7%;
+  padding-bottom:3rem;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+header a{
+  color:#f53b57;
+  font-size:1.6rem;
+}
+
+header .logo{
+  font-size: 2.5 rem;
+  color:#333;
+}
+
+header .logo i{
+  font-size:20px;
+  padding-right:0.5 rem;
+  color:var(--red);
+}
+
+.game{
+  align-items: center;
+  text-align: center;
+  margin-top:3rem;
+}
+.game h1{
+  position:relative;
+  font-size: 3rem;;
+  color:#f53b57;
+  background-color: hsl(185, 88%, 50%);
+  border:0.3rem soild #242323;
+  border-radius:10rem;
+  padding:2rem 3rem;
+  
+}
+.game p{
+  margin-top:1rem;
+  font-size: 2.5rem;
+  color:black;
+
+}
+
+#shape {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  display: none;
+  position: relative;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/*.footer{
+  position:relative;
+  text-align: center;
+  padding:2.5rem 1.5rem;
+  font-size:2rem;
+  color:#666;
+}
+
+.footer span{
+  color:var(--red);
+}
+
+.footer .bakToHome{
+  padding: 0 2.6rem;
+}
+
+.footer .bakToHome p{
+  font-size: 2rem;
+  color:#f53b57;
+  padding-bottom:2.6rem;
+}
+
+.footer .bakToHome #bakToHomeBtn{
+  border-radius: 2rem;
+  border:0.1rem solid #333;
+  padding:1rem;
+  background-color: #f53b57;
+  color:aliceblue;
+}
+.footer .bakToHome #bakToHomeBtn:hover{
+  cursor:pointer;
+  background-color: aliceblue;
+  color:#333;
+}*/
+
+
+
+
+
+@media (max-width:1200px){
+  
+  html{
+    font-size: 55%;
+  }
+
+  header{
+    padding:1.5rem 3%;
+    padding-bottom: 6rem;
+  } 
+
+  section{
+    padding:0 3%;
+    padding-top: 11 rem;
+    padding-bottom: 9 rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:450px){ /*its a size of screen when we reduce the window size*/
+
+  html{
+    font-size:50%;
+  }
+}
